@@ -38,8 +38,8 @@ const NavBar = () => {
             </Link>
 
             <div className={styles.navLinks}>
-                <Link href="/#about">About</Link>
-                <Link href="/#projects">Projects</Link>
+                <Link href="/portfolio/#about">About</Link>
+                <Link href="/portfolio/#projects">Projects</Link>
                 <Link href="https://drive.google.com/file/d/1oFjaM4xopEBtFQ6dyL8MzTsg0e7dmbMy/view?usp=sharing" target="_blank">Resume</Link>
             </div>
         </nav>
