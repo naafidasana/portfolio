@@ -34,7 +34,9 @@ const NavBar = () => {
     return (
         <nav className={`${styles.navbar} ${scrollingDown ? styles.hidden : styles.visible}`}>
             <Link href="/" className={styles.logo}>
-                <Image src={initialsImage} alt="Initials" width={50} height={50} /> | Naafi Dasana IBRAHIM
+                <Image src={initialsImage} alt="Initials" width={50} height={50} />
+                <span className={styles.fullName}> | Naafi Dasana IBRAHIM</span>
+                <span className={styles.shortName}> | Naafi IBRAHIM</span>
             </Link>
 
             <div className={styles.navLinks}>

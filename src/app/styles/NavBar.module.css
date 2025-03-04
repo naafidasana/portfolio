@@ -70,6 +70,25 @@
     width: 100%;
 }
 
+.fullName {
+    display: inline;
+}
+
+.shortName {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fullName {
+        display: none;
+    }
+
+    .shortName {
+        display: inline;
+    }
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         padding: 16px 20px;
