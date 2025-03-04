@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16.5px;
+    line-height: 2.0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Courier, monospace;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#about {
+    background-color: #f0f4f8;
+}
+#projects {
+    background-color: #e1ecf7;
+}
+
+section.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#about h2 {
+    color: #005bb5;
+}
+#projects h2 {
+    color: #007bff;
+}
+
+div {
+    padding-top: 25px;
+}
+
+button, .cardLink {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button:hover, .cardLink:hover {
+    background: #005bb5;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        min-height: auto;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        padding-top: 180px;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+    
+    button, .cardLink {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    section {
+        padding: 10px;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    #about {
+        padding-top: 180px;
+    }
+
+    button, .cardLink {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
