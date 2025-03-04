@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && next export && gh-pages -d out -b gh-pages -r https://github.com/naafi-ibrahim/naafi-ibrahim.git"
+    "deploy": "next build && next export && gh-pages -d out -b main -r https://github.com/your-username/portfolio.git"
   },
   "dependencies": {
     "next": "15.2.0",
