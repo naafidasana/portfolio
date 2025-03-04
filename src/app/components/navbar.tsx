@@ -6,7 +6,6 @@ import styles from "@/app/styles/NavBar.module.css";
 import initialsImage from "@/app/assets/icons/initials.png"; // Ensure this path is correct
 
 const NavBar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
     const [scrollingDown, setScrollingDown] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -39,9 +38,9 @@ const NavBar = () => {
             </Link>
 
             <div className={styles.navLinks}>
-                <Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link>
-                <Link href="/#projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-                <Link href="https://drive.google.com/file/d/1oFjaM4xopEBtFQ6dyL8MzTsg0e7dmbMy/view?usp=sharing" target="_blank" onClick={() => setMenuOpen(false)}>Resume</Link>
+                <Link href="/#about">About</Link>
+                <Link href="/#projects">Projects</Link>
+                <Link href="https://drive.google.com/file/d/1oFjaM4xopEBtFQ6dyL8MzTsg0e7dmbMy/view?usp=sharing" target="_blank">Resume</Link>
             </div>
         </nav>
     );
