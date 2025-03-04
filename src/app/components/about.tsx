@@ -10,6 +10,7 @@ import githubImage from "@/app/assets/icons/github.png";
 import linkedInImage from "@/app/assets/icons/linkedin.png";
 import instagramImage from "@/app/assets/icons/instagram.png";
 import xImage from "@/app/assets/icons/x.png";
+import mailImage from "@/app/assets/icons/mail.png";
 
 const About = () => {
     const [role, setRole] = useState("");
@@ -107,6 +108,9 @@ const About = () => {
                     </a>
                     <a href="https://x.com/naafi_2" target="_blank">
                         <Image src={xImage} alt="X" width={30} height={30}/>
+                    </a>
+                    <a href="mailto:ibrahimnaafi@gmail.com">
+                        <Image src={mailImage} alt="Email" width={30} height={30} />
                     </a>
                 </div>
             </div>
