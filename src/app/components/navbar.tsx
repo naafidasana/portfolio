@@ -42,6 +42,7 @@ const NavBar = () => {
             <div className={styles.navLinks}>
                 <Link href="#about">About</Link>
                 <Link href="#projects">Projects</Link>
+                <Link href="https://scholar.google.com/citations?user=pq6TpNQAAAAJ&hl=en" target="_blank">Publications</Link>
                 <Link href="https://drive.google.com/file/d/1oFjaM4xopEBtFQ6dyL8MzTsg0e7dmbMy/view?usp=sharing" target="_blank">Resume</Link>
             </div>
         </nav>
